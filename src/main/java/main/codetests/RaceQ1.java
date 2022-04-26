@@ -28,7 +28,7 @@ public final class RaceQ1 {
 
         for (int i = 0; i < horseOrZebra; i++){
             int horses = (int) (Math.random() * 2 + 1);
-            int zebras = (int) (Math.random() * 2 + 1);
+            int zebras = (int) (Math.random() * 4 + 1);
 
             horse = horse + horses;
             zebra = zebra + zebras;
@@ -37,8 +37,8 @@ public final class RaceQ1 {
             System.out.println();
         }
 
-        System.out.println("The horse finished: " + horse);
-        System.out.println("The zebra finished: " + zebra);
+        System.out.println("The horse did: " + horse + " laps");
+        System.out.println("The zebra id: " + zebra + " laps");
 
         if (horse > zebra) {
             System.out.println("Horse wins");
@@ -67,11 +67,11 @@ public final class RaceQ1 {
         System.out.println("==========");
 
         for (int i = horses.length - 1; i >= 0; i--) {
-            System.out.println("Horse: " + horses[i]);
+            System.out.println("Horse: " + horses[i] + " laps");
         }
 
         for (int i = zebras.length - 1; i >= 0; i--) {
-            System.out.println("Zebra: " + zebras[i]);
+            System.out.println("Zebra: " + zebras[i] + " laps");
         }
 
     }
